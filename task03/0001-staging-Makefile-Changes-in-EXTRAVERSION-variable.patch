@@ -1,0 +1,30 @@
+From 24a4729e54d2f5d141fda34ee525331f64e2b06d Mon Sep 17 00:00:00 2001
+From: yash Shah <yash.shah@visteon.com>
+Date: Thu, 21 Sep 2017 16:06:36 +0530
+Subject: [PATCH] staging:Makefile:Changes in EXTRAVERSION variable 
+
+Changes made as a part of eudyptula challenge task02
+in Makefile EXTRAVERSION variable inorder
+to print '-eudyptula' in kernel version string
+
+Signed-off-by: yash Shah <yash.shah@visteon.com>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 64cbc66..4a6124a 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,7 +1,7 @@
+ VERSION = 4
+ PATCHLEVEL = 14
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc1
++EXTRAVERSION = -eudyptula
+ NAME = Fearless Coyote
+ 
+ # *DOCUMENTATION*
+-- 
+1.9.1
+
