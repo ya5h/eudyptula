@@ -1,4 +1,5 @@
 obj-m += hello.o
+CFLAGS_hello.o := -DDEBUG
 
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 
