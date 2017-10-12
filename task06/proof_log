@@ -1,0 +1,14 @@
+cmu@ubuntu:~/Desktop/eudyptula/task06$ sudo ./test_code sjjf43k32e
+buf = sjjf43k32e
+String read from device node = fabbe86ebad5
+
+Error in write operation due to Invalid argument
+cmu@ubuntu:~/Desktop/eudyptula/task06$ sudo ./test_code fabbe86ebad5
+buf = fabbe86ebad5
+String read from device node = fabbe86ebad5
+
+Write operation success. 12 number of bytes written
+cmu@ubuntu:~/Desktop/eudyptula/task06$ sudo cat /dev/eudyptula 
+fabbe86ebad5
+cmu@ubuntu:~/Desktop/eudyptula/task06$ 
+
