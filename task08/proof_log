@@ -1,0 +1,17 @@
+root@ubuntu /h/c/D/e/task08# insmod hello.ko 
+root@ubuntu /h/c/D/e/task08# cat /sys/kernel/debug/eudyptula/foo 
+root@ubuntu /h/c/D/e/task08# cat /sys/kernel/debug/eudyptula/jiffies 
+kernel jiffies: 2269049
+root@ubuntu /h/c/D/e/task08# cat /sys/kernel/debug/eudyptula/id 
+fabbe86ebad5
+root@ubuntu /h/c/D/e/task08# cat /sys/kernel/debug/eudyptula/jiffies 
+kernel jiffies: 2270485
+root@ubuntu /h/c/D/e/task08# echo "test string" > /sys/kernel/debug/eudyptula/foo 
+root@ubuntu /h/c/D/e/task08# cat /sys/kernel/debug/eudyptula/foo 
+test string
+root@ubuntu /h/c/D/e/task08# cat /sys/kernel/debug/eudyptula/foo 
+root@ubuntu /h/c/D/e/task08# echo "test string" > /sys/kernel/debug/eudyptula/id 
+Error while writing to stdout
+write_loop: Invalid argument
+root@ubuntu /h/c/D/e/task08# echo "fabbe86ebad5" > /sys/kernel/debug/eudyptula/id 
+root@ubuntu /h/c/D/e/task08#
