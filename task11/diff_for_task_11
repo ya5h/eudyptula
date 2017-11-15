@@ -1,0 +1,26 @@
+diff --git a/drivers/gpu/vga/vgaarb.c b/drivers/gpu/vga/vgaarb.c
+index 76875f62..bc8d68c 100644
+--- a/drivers/gpu/vga/vgaarb.c
++++ b/drivers/gpu/vga/vgaarb.c
+@@ -1402,6 +1402,13 @@ static int pci_notify(struct notifier_block *nb, unsigned long action,
+ 	MISC_DYNAMIC_MINOR, "vga_arbiter", &vga_arb_device_fops
+ };
+ 
++static ssize_t hello_show(struct device *dev, struct device_attribute *attr, char *buf)
++{
++	return sprintf(buf, "fabbe86ebad5\n");
++}
++
++static DEVICE_ATTR(id, S_IRUGO, hello_show, NULL);
++
+ static int __init vga_arb_device_init(void)
+ {
+ 	int rc;
+@@ -1468,6 +1475,7 @@ static int __init vga_arb_device_init(void)
+ 			vgaarb_info(dev, "no bridge control possible\n");
+ 	}
+ 
++	device_create_file(vga_arb_device.this_device, &dev_attr_id);
+ 	pr_info("loaded\n");
+ 	return rc;
+ }
