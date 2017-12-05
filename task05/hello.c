@@ -1,10 +1,11 @@
-#include<linux/kernel.h>
-#include<linux/init.h>
-#include<linux/module.h>
-#include<linux/usb.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/usb.h>
+#include <linux/hid.h>
 
 static struct usb_device_id skel_table[ ] = {
-	{ USB_DEVICE(0x1bcf, 0x28b8) },
+	{ USB_DEVICE_INFO(USB_INTERFACE_CLASS_HID, USB_INTERFACE_SUBCLASS_BOOT, USB_INTERFACE_PROTOCOL_KEYBOARD) },
 	{ }
 };
 MODULE_DEVICE_TABLE(usb, skel_table);

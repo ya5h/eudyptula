@@ -1,0 +1,8 @@
+[20293.964067] usb 1-1: new high-speed USB device number 3 using ehci-pci
+[20294.670243] usb 1-1: New USB device found, idVendor=1bcf, idProduct=28b8
+[20294.670245] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[20294.670246] usb 1-1: Product: Integrated_Webcam_HD
+[20294.670247] usb 1-1: Manufacturer: CN0J8NNP7248768KB3HWA00
+[20294.709037] uvcvideo: Found UVC 1.00 device Integrated_Webcam_HD (1bcf:28b8)
+[20294.724823] input: Integrated_Webcam_HD: Integrate as /devices/pci0000:00/0000:00:11.0/0000:02:03.0/usb1/1-1/1-1:1.0/input/input6
+[20295.109780] Hello World!
